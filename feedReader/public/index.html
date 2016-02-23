@@ -59,7 +59,7 @@
                 link[i] = aFeed.link;
                 markUp += "<a href = javascript:loadSubPost(" + i + ") class='listItem'>" + aFeed.id + " : " + aFeed.link + "</a>" + "<br/>";
                 document.getElementById("feedDetails").innerHTML = "";
-                markUp += "<a href='javascript:aSubSelected(" + i + ")' class='listItem'>" + aFeed.id + " : " + aFeed.link +" </a>";
+                
         }
         document.getElementById("myFeedList").innerHTML = markUp;
         }
@@ -149,17 +149,17 @@
 
 <body onload='startUp()'> 
   <div id='myFeedWrapper'>
-    <h1> My Feeds </h1>
+    <h1><center>My Feeds</center></h1>
     <a href='javascript:addFeed()' style='text-decoration: none;padding: 5px; background: white; color: black; border-radius: 5px; border 1px solid black;margin:10px; box-shadow: 0px 0px 2px;'> Add New </a>
     
       <div id='myFeedList'> </div>
   </div>
   <div id='currFeedWrapper'>
-    <h1> My Posts </h1>
+    <h1><center>My Posts</center></h1>
     <div id='currFeedList'> </div>
  </div>
   <div id='selFeedWrapper'> 
-    <h1> Details </h1>
+    <h1><center>Details</center></h1>
     <div id='feedDetails'> </div>
   </div>
 </body>
